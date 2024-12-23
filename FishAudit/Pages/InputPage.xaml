@@ -18,6 +18,7 @@
         <ui:TextBox x:Name="min_t_time" HorizontalAlignment="Left" Margin="600,358,0,0" TextWrapping="Wrap"  Text="t min ℃" VerticalAlignment="Top" Width="384" SelectionBrush="Black" FontSize="36"/>
         <ui:TextBox x:Name="timeStamp" HorizontalAlignment="Left" Margin="168,456,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" Width="408" FontSize="36"/>
         <ui:TextBox x:Name="tempChanges" HorizontalAlignment="Left" Margin="168,540,0,0" TextWrapping="Wrap" Text="Изменения темп." VerticalAlignment="Top" Width="1606" FontSize="36"/>
+        <ui:Button Content="Отчет" HorizontalAlignment="Center" Margin="0,622,0,0" VerticalAlignment="Top" Height="50" Width="148" FontSize="36" Click="Button_Click"/>
 
     </Grid>
 </Page>
