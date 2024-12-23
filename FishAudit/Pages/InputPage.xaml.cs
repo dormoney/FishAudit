@@ -24,23 +24,24 @@ namespace FishAudit.Pages
         public InputPage()
         {
             InitializeComponent();
+            string filePath = "/FishReports/fishstamp.txt";
+            List<string> lines = new List<string>();
             try
             {
-                using (StreamReader reader = new StreamReader("/FishReports/fishstamp.txt"))
+                using (StreamReader reader = new StreamReader(filePath))
                 {
                     string line;
                     while ((line = reader.ReadLine()) != null)
                     {
-                        string firstLine = reader.ReadLine();
-                        string secondLine = reader.ReadLine();
-                        Console.WriteLine("Первая строка: " + firstLine);
-                        Console.WriteLine("Вторая строка: " + secondLine);
+                        lines.Add(line);
                     }
                 }
+                timeStamp.Text = lines[0];
+                tempChanges.Text = lines[1];
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                MessageBox.Show(e.Message);
+                Console.WriteLine("Произошла ошибка: " + ex.Message);
             }
         }
     }
