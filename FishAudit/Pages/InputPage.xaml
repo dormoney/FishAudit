@@ -11,8 +11,13 @@
 
     <Grid Background="White">
 
-        <ui:TextBox HorizontalAlignment="Left" Margin="168,194,0,0" TextWrapping="Wrap" Text="Вид рыбы" VerticalAlignment="Top" Width="384" SelectionBrush="Black" FontSize="36"/>
-        <ui:TextBox HorizontalAlignment="Left" Margin="168,274,0,0" TextWrapping="Wrap"  Text="Макс. темп." VerticalAlignment="Top" Width="384" SelectionBrush="Black" FontSize="36"/>
+        <ui:TextBox x:Name="FishType" HorizontalAlignment="Left" Margin="168,194,0,0" TextWrapping="Wrap" Text="Вид рыбы" VerticalAlignment="Top" Width="384" SelectionBrush="Black" FontSize="36"/>
+        <ui:TextBox x:Name="max_tem" HorizontalAlignment="Left" Margin="168,274,0,0" TextWrapping="Wrap"  Text="max ℃" VerticalAlignment="Top" Width="384" SelectionBrush="Black" FontSize="36"/>
+        <ui:TextBox x:Name="max_t_time" HorizontalAlignment="Left" Margin="600,274,0,0" TextWrapping="Wrap"  Text="t max ℃" VerticalAlignment="Top" Width="384" SelectionBrush="Black" FontSize="36"/>
+        <ui:TextBox x:Name="min_tem" HorizontalAlignment="Left" Margin="168,358,0,0" TextWrapping="Wrap"  Text="min ℃" VerticalAlignment="Top" Width="384" SelectionBrush="Black" FontSize="36"/>
+        <ui:TextBox x:Name="min_t_time" HorizontalAlignment="Left" Margin="600,358,0,0" TextWrapping="Wrap"  Text="t min ℃" VerticalAlignment="Top" Width="384" SelectionBrush="Black" FontSize="36"/>
+        <ui:TextBox x:Name="timeStamp" HorizontalAlignment="Left" Margin="168,456,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" Width="408" FontSize="36"/>
+        <ui:TextBox x:Name="tempChanges" HorizontalAlignment="Left" Margin="168,540,0,0" TextWrapping="Wrap" Text="Изменения темп." VerticalAlignment="Top" Width="1606" FontSize="36"/>
 
     </Grid>
 </Page>

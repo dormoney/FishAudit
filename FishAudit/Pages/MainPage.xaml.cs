@@ -29,5 +29,10 @@ namespace FishAudit.Pages
         {
             Application.Current.Shutdown();
         }
+
+        private void Start_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.Instanse.MainFrame.Navigate(new InputPage());
+        }
     }
 }

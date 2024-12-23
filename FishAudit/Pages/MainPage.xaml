@@ -10,7 +10,7 @@
       Title="MainPage">
 
     <Grid Background="White">
-        <ui:Button x:Name="Start" Content="Начать" HorizontalAlignment="Center" VerticalAlignment="Center" Height="72" Width="178" FontSize="50"/>
+        <ui:Button x:Name="Start" Content="Начать" HorizontalAlignment="Center" VerticalAlignment="Center" Height="72" Width="178" FontSize="50" Click="Start_Click"/>
         <ui:Button x:Name="Close" Content="Выйти" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="138" FontSize="36" Margin="1772,10,0,0" Click="Close_Click"/>
     </Grid>
 </Page>
