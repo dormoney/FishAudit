@@ -71,8 +71,7 @@ namespace FishAudit.Pages
             {
                 int totalDeviationMinutes = aboveMaxMinutes;
                 string report = $"Дата начала: {timestamp}\n" +
-                            $"Всего времени, когда температура была ниже минимальной ({minAllowedTemp}°C): {belowMinMinutes} минут.\n" +
-                            $"Общее время отклонений: {totalDeviationMinutes} минут.\n";
+                            $"Всего времени, когда температура была выше максимальной ({minAllowedTemp}°C): {belowMinMinutes} минут.\n";
                 using (StreamWriter writer = new StreamWriter("/FishReports/report.txt", false))
                 {
                     writer.WriteLine(report);
